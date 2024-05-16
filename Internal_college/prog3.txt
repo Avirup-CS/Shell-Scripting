@@ -1,0 +1,73 @@
+$ cat > student.txt
+S001    |Rohit Roy      |CSE       |75
+S002    |Sam Paul       |ECE       |85
+S003    |Kamal Sen      |MBA       |93
+S004    |Animesh Roy    |EE        |74
+S005    |Manish Kumar   |BCA       |52
+S006    |Rupa Roy       |MCA       |84
+S007    |Virat Kohli    |BBA       |49
+S008    |Ankan Nanda    |ME        |66
+S009    |Arup Mondal    |IT        |71
+S010    |Samir Sarkar   |BSC       |73
+
+
+$ cat student.txt
+
+S001    |Rohit Roy      |CSE       |75
+S002    |Sam Paul       |ECE       |85
+S003    |Kamal Sen      |MBA       |93
+S004    |Animesh Roy    |EE        |74
+S005    |Manish Kumar   |BCA       |52
+S006    |Rupa Roy       |MCA       |84
+S007    |Virat Kohli    |BBA       |49
+S008    |Ankan Nanda    |ME        |66
+S009    |Arup Mondal    |IT        |71
+S010    |Samir Sarkar   |BSC       |73
+
+
+$ tail -5 student.txt
+
+S006    |Rupa Roy       |MCA       |84
+S007    |Virat Kohli    |BBA       |49
+S008    |Ankan Nanda    |ME        |66
+S009    |Arup Mondal    |IT        |71
+S010    |Samir Sarkar   |BSC       |73
+
+
+$ sort -t "|" -k2 student.txt | cut -d "|" -f 2
+
+Animesh Roy
+Ankan Nanda
+Arup Mondal
+Kamal Sen
+Manish Kumar
+Rohit Roy
+Rupa Roy
+Sam Paul
+Samir Sarkar
+Virat Kohli
+
+
+$ sort -t "|" -k3 student.txt | cut -d "|" -f 3
+
+BBA
+BCA
+BSC
+CSE
+ECE
+EE
+IT
+MBA
+MCA
+ME
+
+
+$ sort -t "|" -k4 -nr student.txt | head -5 > Topper.txt
+
+$ cat Topper.txt
+
+S003    |Kamal Sen      |MBA       |93
+S002    |Sam Paul       |ECE       |85
+S006    |Rupa Roy       |MCA       |84
+S001    |Rohit Roy      |CSE       |75
+S004    |Animesh Roy    |EE        |74

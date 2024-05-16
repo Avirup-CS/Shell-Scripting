@@ -1,0 +1,57 @@
+$ cat > employee2.txt
+
+E001    |Rohit Roy      |Analyst        |25000
+E002    |Sam Paul       |Programmer     |28000
+E003    |Kamal Sen      |Developer      |35000
+E004    |Animesh Roy    |Clerk          |29000
+E005    |Manish Kumar   |Manager        |38000
+E006    |Rupa Roy       |CMO            |40000
+E007    |Virat Kohli    |CEO            |50000
+E008    |Ankan Nanda    |Designer       |35000
+E009    |Arup Mondal    |Sales          |23000
+E010    |Samir Sarkar   |Artist         |65000
+
+
+$ cat  employee2.txt
+
+E001    |Rohit Roy      |Analyst        |25000
+E002    |Sam Paul       |Programmer     |28000
+E003    |Kamal Sen      |Developer      |35000
+E004    |Animesh Roy    |Clerk          |29000
+E005    |Manish Kumar   |Manager        |38000
+E006    |Rupa Roy       |CMO            |40000
+E007    |Virat Kohli    |CEO            |50000
+E008    |Ankan Nanda    |Designer       |35000
+E009    |Arup Mondal    |Sales          |23000
+E010    |Samir Sarkar   |Artist         |65000
+
+
+$ head -5 employee2.txt
+
+E001    |Rohit Roy      |Analyst        |25000
+E002    |Sam Paul       |Programmer     |28000
+E003    |Kamal Sen      |Developer      |35000
+E004    |Animesh Roy    |Clerk          |29000
+E005    |Manish Kumar   |Manager        |38000
+
+
+
+$ cut -d "|" -f 1,2,4 employee2.txt
+
+E001    |Rohit Roy      |25000
+E002    |Sam Paul       |28000
+E003    |Kamal Sen      |35000
+E004    |Animesh Roy    |29000
+E005    |Manish Kumar   |38000
+E006    |Rupa Roy       |40000
+E007    |Virat Kohli    |50000
+E008    |Ankan Nanda    |35000
+E009    |Arup Mondal    |23000
+E010    |Samir Sarkar   |65000
+
+
+$ sort -t "|" -k4 -nr employee2.txt | head -2
+
+E010    |Samir Sarkar   |Artist         |65000
+E007    |Virat Kohli    |CEO            |50000
+

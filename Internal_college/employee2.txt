@@ -1,0 +1,10 @@
+E001    |Rohit Roy      |Analyst        |25000
+E002    |Sam Paul       |Programmer     |28000
+E003    |Kamal Sen      |Developer      |35000
+E004    |Animesh Roy    |Clerk          |29000
+E005    |Manish Kumar   |Manager        |38000
+E006    |Rupa Roy       |CMO            |40000
+E007    |Virat Kohli    |CEO            |50000
+E008    |Ankan Nanda    |Designer       |35000
+E009    |Arup Mondal    |Sales          |23000
+E010    |Samir Sarkar   |Artist         |65000
