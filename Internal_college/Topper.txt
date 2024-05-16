@@ -1,0 +1,5 @@
+S003    |Kamal Sen      |MBA       |93
+S002    |Sam Paul       |ECE       |85
+S006    |Rupa Roy       |MCA       |84
+S001    |Rohit Roy      |CSE       |75
+S004    |Animesh Roy    |EE        |74

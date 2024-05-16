@@ -1,0 +1,10 @@
+S001    |Rohit Roy      |CSE       |75
+S002    |Sam Paul       |ECE       |85
+S003    |Kamal Sen      |MBA       |93
+S004    |Animesh Roy    |EE        |74
+S005    |Manish Kumar   |BCA       |52
+S006    |Rupa Roy       |MCA       |84
+S007    |Virat Kohli    |BBA       |49
+S008    |Ankan Nanda    |ME        |66
+S009    |Arup Mondal    |IT        |71
+S010    |Samir Sarkar   |BSC       |73
